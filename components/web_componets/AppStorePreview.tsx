@@ -1,70 +1,54 @@
+import Image from "next/image";
+
 export function AppStorePreview() {
   return (
-    <section className="relative w-full bg-primary px-4 py-16 md:py-24">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative w-full  px-4 md:px-0 pt-16 md:pt-24"
+      style={{
+        background: "linear-gradient(84.54deg, #D48300 0.86%, #FFAA2D 95.32%)",
+      }}
+    >
+      <div className="max-w-[1170px] lg:max-w-full ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="flex flex-col space-y-6 text-primary-foreground">
-            <h2 className="text-4xl md:text-5xl font-bold leading-tight flex items-center gap-3">
-              <span className="text-3xl">🍎</span>
+          <div className="flex flex-col space-y-6 text-primary-foreground md:pl-[350px]">
+            <h2 className="text-4xl md:text-[48px] font-bold leading-tight flex items-center gap-3 text-[#FFFFFF]">
+
               Get the app now
             </h2>
 
-            <p className="text-lg">
+            <p className="text-xl text-[#FAFAFA] font-normal leading-[150%] mt-3 max-w-[440px]">
               Install in seconds and start enjoying right away. No trials, no hidden catches—just smooth, hassle-free
               entertainment.
             </p>
 
-            <button className="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg w-fit font-medium hover:bg-gray-900 transition">
-              <span>🍎</span>
-              Download on the App Store
+            <button className="bg-transparent w-[130px] h-[40px] md:h-[56px] md:w-[157px] hover:scale-105 duration-300">
+              <Image src="/assets/button.png" alt="Google Play" width={1000} height={1000} className="w-full h-full object-cover rounded-[8px]" />
             </button>
           </div>
 
           {/* Right - App Store Preview */}
           <div className="relative">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-xl p-4 md:p-6">
-              <div className="flex items-center gap-3 mb-6 pb-4 border-b border-gray-200">
-                <span className="text-lg">App Store</span>
-                <span className="text-sm text-gray-400">Preview</span>
+            <div className=" absolute  top-[50%] translate-y-[-50%] left-[-300px]">
+              <Image
+                src="/assets/overly.png"
+                alt="Phone Mockup"
+                width={1000}
+                height={1000}
+                className="w-full h-full rounded-[12px] object-cover"
+              />
+            </div>
+            <div className="bg-white pt-[20px] px-[32px] rounded-tl-[12px] rounded-bl-[12px]">
+              <div className="flex gap-3 pb-[54px]">
+                <div className="text-[24px] text-[#323232] font-medium">App Store</div>
+                <div className="text-[24px] text-[#CDCDCD] font-medium">Preview</div>
               </div>
-
-              {/* App Card */}
-              <div className="flex gap-4 mb-6">
-                <div className="w-20 h-20 bg-primary rounded-lg flex-shrink-0 flex items-center justify-center text-white text-3xl font-bold">
-                  L
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-lg">LABBY TV</h3>
-                  <p className="text-sm text-gray-600">Manage your TV</p>
-                  <p className="text-xs text-primary font-medium">XXX Application Ltd.</p>
-                  <p className="text-xs text-gray-600 mt-1">Free • Offers in app purchases</p>
-                  <div className="flex items-center gap-1 mt-2">
-                    {[...Array(5)].map((_, i) => (
-                      <span key={i} className="text-primary text-sm">
-                        ★
-                      </span>
-                    ))}
-                    <span className="text-sm text-gray-600">5</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Tabs */}
-              <div className="flex gap-4 border-b border-gray-200 mb-4 pb-4">
-                <button className="text-sm font-medium text-gray-900 border-b-2 border-gray-900 pb-2">
-                  Screenshots
-                </button>
-                <button className="text-sm text-gray-400">Ipad</button>
-                <button className="text-sm text-primary">Iphone</button>
-              </div>
-
-              {/* Screenshots Grid */}
-              <div className="grid grid-cols-3 gap-3">
-                {[1, 2, 3].map((idx) => (
-                  <div key={idx} className="bg-gray-800 rounded-lg aspect-[3/5]"></div>
-                ))}
-              </div>
+              <Image
+                src="/assets/app2.png"
+                alt="Phone Mockup"
+                width={1000}
+                height={1000}
+                className="w-full h-full rounded-[12px] object-cover"
+              />
             </div>
           </div>
         </div>

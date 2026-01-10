@@ -20,10 +20,10 @@ export default function Home() {
       <RealTimeConnection />
       <AllEncompassingSearch />
       <VideoPlayer />
-      <AppStorePreview />
+      <Testimonials />
       <Pricing />
       <FAQ />
-      <Testimonials />
+      <AppStorePreview />
       <Footer />
     </main>
   )

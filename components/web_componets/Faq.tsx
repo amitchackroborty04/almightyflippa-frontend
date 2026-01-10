@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import Image from "next/image"
 
 export function FAQ() {
   const faqs = [
@@ -30,13 +31,13 @@ export function FAQ() {
   ]
 
   return (
-    <section className="relative w-full bg-background px-4 py-16 md:py-24">
-      <div className="max-w-4xl mx-auto">
+    <section className="relative w-full bg-black px-4 py-16 md:py-24">
+      <div className="container mx-auto">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-primary">Got questions?</span>
+            <span className="text-[#FBB41D]">Got questions?</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-[#E7E7E7] max-w-2xl mx-auto">
             Find answers to common questions about Aspiring Legal Network and how it can support you at every stage of
             your journey.
           </p>
@@ -47,15 +48,17 @@ export function FAQ() {
             <AccordionItem
               key={idx}
               value={`item-${idx}`}
-              className="border border-border rounded-lg px-6 data-[state=open]:bg-card/50 data-[state=open]:border-primary transition-colors"
+              className="border border-[#FFFF00] rounded-lg px-5  data-[state=open]:border-[#FFFF00] transition-colors"
             >
-              <AccordionTrigger className="text-left font-medium text-foreground hover:text-primary transition-colors py-4">
-                <div className="flex items-center gap-3 flex-1">
-                  <span className="text-primary text-lg flex-shrink-0">❓</span>
-                  <span>{faq.question}</span>
+              <AccordionTrigger className="text-left font-medium  transition-colors py-4">
+                <div className="flex items-center gap-3 flex-1 pb-1">
+                  <span className="">
+                    <Image src="/assets/queation.png" alt="Phone Mockup" width={1000} height={1000} className="w-[20px] md:w-[24px] h-[20px] md:h-[24px] object-cover" />
+                  </span>
+                  <span className="text-[#FFFFFF] text-sm md:text-[18px] font-medium ">{faq.question}</span>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground pt-2 pb-4">{faq.answer}</AccordionContent>
+              <AccordionContent className="text-[#131313] text-xs md:text-base pt-2 pb-4 bg-[#E7E7E7] py-2 px-4 ">{faq.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
