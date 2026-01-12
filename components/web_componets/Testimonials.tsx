@@ -42,12 +42,12 @@ export function Testimonials() {
   ]
 
   const features = [
-    {
-      icon: "/assets/t1.png",
-      title: "Share your channels",
-      description:
-        "Do it securely with time-sensitive links. Choose expiration durations of 1, 3, 24 hours or even longer if you wish to give a friend access to a link for a specific time frame.",
-    },
+    // {
+    //   icon: "/assets/t1.png",
+    //   title: "Share your channels",
+    //   description:
+    //     "Do it securely with time-sensitive links. Choose expiration durations of 1, 3, 24 hours or even longer if you wish to give a friend access to a link for a specific time frame.",
+    // },
     {
       icon: "/assets/t2.png",
       title: "Parental lock",
@@ -150,7 +150,7 @@ export function Testimonials() {
 
         {/* Features Grid - unchanged */}
         <div className="">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, idx) => (
               <div key={idx} className="flex flex-col items-center text-center space-y-4">
                 <div className="w-[60px] h-[60px] bg-primary/10 rounded-2xl flex items-center justify-center text-3xl border border-primary/20">
