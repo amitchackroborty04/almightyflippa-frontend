@@ -41,32 +41,27 @@ export function Testimonials() {
     },
   ]
 
-  const features = [
-    // {
-    //   icon: "/assets/t1.png",
-    //   title: "Share your channels",
-    //   description:
-    //     "Do it securely with time-sensitive links. Choose expiration durations of 1, 3, 24 hours or even longer if you wish to give a friend access to a link for a specific time frame.",
-    // },
-    {
-      icon: "/assets/t2.png",
-      title: "Parental lock",
-      description:
-        "Do it securely with time-sensitive links. Choose expiration durations of 1, 3, 24 hours or even longer if you wish to give a friend access to a link for a specific time frame.",
-    },
-    {
-      icon: "/assets/t3.png",
-      title: "EPG reminders",
-      description:
-        "Do it securely with time-sensitive links. Choose expiration durations of 1, 3, 24 hours or even longer if you wish to give a friend access to a link for a specific time frame.",
-    },
-    {
-      icon: "/assets/t4.png",
-      title: "Email support",
-      description:
-        "Do it securely with time-sensitive links. Choose expiration durations of 1, 3, 24 hours or even longer if you wish to give a friend access to a link for a specific time frame.",
-    },
-  ]
+ const features = [
+  {
+    icon: "/assets/t2.png",
+    title: "Parental Lock",
+    description:
+      "Secure access with a PIN to restrict channels or content. Ideal for keeping kids away from adult or restricted sections.",
+  },
+  {
+    icon: "/assets/t3.png",
+    title: "EPG Reminders",
+    description:
+      "Never miss a show again. Set reminders from the program guide and get notified when your program is about to start.",
+  },
+  {
+    icon: "/assets/t4.png",
+    title: "Discord Support",
+    description:
+      "Get help in real time from our community and support team. Join our Discord server to ask questions, share feedback, and get updates.",
+  },
+];
+
 
   // ── Carousel logic ───────────────────────────────────────
   const [api, setApi] = useState<CarouselApi>()
