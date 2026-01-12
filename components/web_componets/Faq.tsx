@@ -3,32 +3,37 @@ import Image from "next/image"
 
 export function FAQ() {
   const faqs = [
-    {
-      question: "It has survived not only five centuries, but also the leap into electron?",
-      answer:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    },
-    {
-      question: "It has survived not only five centuries, but also the leap into electron?",
-      answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      question: "It has survived not only five centuries, but also the leap into electron?",
-      answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      question: "It has survived not only five centuries, but also the leap into electron?",
-      answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      question: "It has survived not only five centuries, but also the leap into electron?",
-      answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-    {
-      question: "It has survived not only five centuries, but also the leap into electron?",
-      answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    },
-  ]
+  {
+    question: "What is this IPTV media player used for?",
+    answer:
+      "It lets you stream live TV, movies, and series over the internet using IPTV playlists, instead of cable or satellite TV.",
+  },
+  {
+    question: "Which devices are supported?",
+    answer:
+      "The app is available on Apple devices like iPhone, iPad, and Apple TV, as well as Android phones, tablets, and Android TV devices.",
+  },
+  {
+    question: "Does the app include TV channels or content?",
+    answer:
+      "No. The app does not provide any channels or media. You must add your own IPTV service or playlist from a third-party provider.",
+  },
+  {
+    question: "What playlist formats are supported?",
+    answer:
+      "The player supports M3U and M3U8 playlists. Some versions may also support Xtream Codes login.",
+  },
+  {
+    question: "Does it support EPG, subtitles, and catch-up TV?",
+    answer:
+      "Yes. When supported by your IPTV provider, the app can display an electronic program guide (EPG), subtitles, and catch-up content.",
+  },
+  {
+    question: "Do I need an internet connection to use the app?",
+    answer:
+      "Yes. A stable internet connection is required to stream content. Faster connections provide better results, especially for HD or 4K streams.",
+  },
+];
 
   return (
     <section className="relative w-full bg-black px-4 py-16 md:py-24">
